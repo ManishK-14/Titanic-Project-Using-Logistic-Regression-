@@ -16,7 +16,6 @@ This repository contains a machine learning project that predicts the **survival
 - [Usage](#usage)  
 - [Future Improvements](#future-improvements)  
 - [References](#references)  
-- [Author](#author)  
 
 ---
 
@@ -163,3 +162,5 @@ Kaggle Titanic Competition
 
 Scikit-learn Logistic Regression Documentation
 (https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+
+
