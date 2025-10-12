@@ -98,18 +98,22 @@ The Titanic dataset is a classic dataset used to practice machine learning and p
 **Training Accuracy:** 0.879 (~88%)  
 
 **Confusion Matrix (Training):**
-[[499 50]
-[ 58 284]]
+| Actual \ Predicted | 0   | 1   |
+| ------------------ | --- | --- |
+| 0                  | 499 | 50  |
+| 1                  | 58  | 284 |
+
 
 
 **Classification Report (Training):**
-          precision    recall  f1-score   support
-       0       0.90      0.91      0.90       549
-       1       0.85      0.83      0.84       342
-accuracy                           0.88       891
+| Class            | Precision | Recall | F1-Score | Support |
+| ---------------- | --------- | ------ | -------- | ------- |
+| 0                | 0.90      | 0.91   | 0.90     | 549     |
+| 1                | 0.85      | 0.83   | 0.84     | 342     |
+| **Accuracy**     |           |        | 0.88     | 891     |
+| **Macro Avg**    | 0.87      | 0.87   | 0.87     | 891     |
+| **Weighted Avg** | 0.88      | 0.88   | 0.88     | 891     |
 
-   macro avg       0.87      0.87      0.87       891
-weighted avg       0.88      0.88      0.88       891
 
 
 
