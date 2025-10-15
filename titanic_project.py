@@ -136,20 +136,6 @@ plt.title('ROC Curve')
 plt.legend(loc='lower right')
 plt.show()
 
-# Feature Importance
-# Use the feature coefficients from the Logistic Regression model for visualization
-feature_names = x_train.columns
-coefficients = final_model.coef_[0] 
-coef_df = pd.DataFrame({'Feature': feature_names, 'Coefficient': coefficients})
-coef_df = coef_df.sort_values(by='Coefficient', ascending=False)
-
-top_features = pd.concat([coef_df.head(15), coef_df.tail(15)])
-plt.figure(figsize=(8,8))
-sns.barplot(x='Coefficient', y='Feature', data=top_features)
-plt.title('Top Feature Importance (Logistic Regression Coefficients)') 
-plt.tight_layout()
-plt.show()
-
 # Actual vs Predicted (training data)
 plt.figure(figsize=(10,5))
 plt.scatter(range(len(y_train)), y_train, color='blue', label='Actual', alpha=0.6)
@@ -168,3 +154,4 @@ plt.ylabel('Survival Probability')
 plt.title('Prediction Probabilities vs Fare (Test Data)') 
 plt.legend()
 plt.show()
+
